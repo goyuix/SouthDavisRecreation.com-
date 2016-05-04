@@ -703,7 +703,7 @@
 			}
 		} );
 
-		$( 'a[href*=#]:not([href=#])' ).click( function() {
+		$( "a[href*='#']:not([href='#'])" ).click( function() {
 			var $this_link = $( this ),
 				has_closest_smooth_scroll_disabled = $this_link.closest( '.et_smooth_scroll_disabled' ).length,
 				has_closest_woocommerce_tabs = ( $this_link.closest( '.woocommerce-tabs' ).length && $this_link.closest( '.tabs' ).length ),
